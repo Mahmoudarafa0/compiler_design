@@ -1,0 +1,8 @@
+there are 63 tokens
+There Are 6 Keywords: ['include', 'int', 'int', 'int', 'if', 'return']
+There Are 15 Identifiers: ['main', 'a', 'a1', 'b', 'a', 'a', 'a1', 'a', 'b', 'a', 'printf', 'a', 'printf', 'printf', 'a']
+There Are 1 Header Files: ['stdio.h']
+There Are 25 Symbols: ['(', ')', '{', ',', ';', ';', ';', ';', '(', ')', '{', ';', '}', '(', ')', ';', '(', ')', ';', '(', ',', ')', ';', ';', '}']
+There Are 5 Numerals: ['0', '10', '1', '10', '0']
+There Are 9 Operators: ['<', '>', '=', '=', '=', '+', '<=', '=', '++']
+There Are 2 string_literals: ['"hello world"', '"hello world %s"']
