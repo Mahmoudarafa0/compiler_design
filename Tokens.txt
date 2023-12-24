@@ -1,8 +1,9 @@
-there are 63 tokens
-There Are 6 Keywords: ['include', 'int', 'int', 'int', 'if', 'return']
-There Are 15 Identifiers: ['main', 'a', 'a1', 'b', 'a', 'a', 'a1', 'a', 'b', 'a', 'printf', 'a', 'printf', 'printf', 'a']
-There Are 1 Header Files: ['stdio.h']
-There Are 25 Symbols: ['(', ')', '{', ',', ';', ';', ';', ';', '(', ')', '{', ';', '}', '(', ')', ';', '(', ')', ';', '(', ',', ')', ';', ';', '}']
-There Are 5 Numerals: ['0', '10', '1', '10', '0']
-There Are 9 Operators: ['<', '>', '=', '=', '=', '+', '<=', '=', '++']
-There Are 2 string_literals: ['"hello world"', '"hello world %s"']
+['if', '(', 'x', '==', '5', ')', '{', 'y', '=', 'x', '+', '1', ';', '}', 'else', '{', 'y', '=', 'x', '-', '1', ';', '}']
+there are 23 tokens
+There Are 2 Keywords: ['if', 'else']
+There Are 5 Identifiers: ['x', 'y', 'x', 'y', 'x']
+There Are 0 Header Files: []
+There Are 8 Symbols: ['(', ')', '{', ';', '}', '{', ';', '}']
+There Are 3 Numerals: ['5', '1', '1']
+There Are 5 Operators: ['==', '=', '+', '=', '-']
+There Are 0 string_literals: []

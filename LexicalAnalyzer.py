@@ -4,7 +4,9 @@ import re
 input = open('InputProgram.c', 'r')
 program = input.read()
 
+input.close()
 
+output_tokens = []
 keywords = []
 identifiers = []
 header_files = []
@@ -62,6 +64,7 @@ for line in scanned_program:
         tokens = nltk.wordpunct_tokenize(line)
     # inserting different tokens to lists
     for token in tokens:
+        output_tokens.append(token)
         if(re.findall(keywords_pattern, token)):
             keywords.append(token)
         elif(re.findall(header_file_pattern,token)):
@@ -80,6 +83,7 @@ for line in scanned_program:
 counter = len(keywords) + len(identifiers) + len(header_files) + len(symbols) + len(numerals) + len(operators) + len(string_literals)
 
 output = open('Tokens.txt', 'w')
+output.write(f"{output_tokens}\n")
 output.write(f"there are {counter} tokens\n")
 output.write(f"There Are {len(keywords)} Keywords: {keywords}\n")
 output.write(f"There Are {len(identifiers)} Identifiers: {identifiers}\n")
@@ -89,5 +93,4 @@ output.write(f"There Are {len(numerals)} Numerals: {numerals}\n")
 output.write(f"There Are {len(operators)} Operators: {operators}\n")
 output.write(f"There Are {len(string_literals)} string_literals: {string_literals}")
 
-input.close()
 output.close()
